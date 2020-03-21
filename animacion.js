@@ -818,7 +818,7 @@ function dimension() {
 
 //FRAMES
 
-alert("cantidad de frames utilizados: " + window.length);
+//alert("cantidad de frames utilizados: " + window.length);
 /*
 var historial = window.history;
 console.log(historial);
@@ -835,3 +835,98 @@ console.log(navegador);
 var pantalla = window.screen;
 console.log(pantalla);
 */
+
+
+//------------------------------------------------------------------------
+
+//MANEJO DEL DOM
+
+/*
+ - querySelector 
+ - getElement 
+ - Modificar contenido html
+ - Modificar propiedades html
+ - Modificar estilos css
+
+*/
+
+
+/*var a = document.querySelector(".primero");
+
+a.style.color = "blue";*/
+
+/*var a = document.querySelector("#dos")
+
+a.style.color = "red";*/
+
+/*var a = document.querySelector("#todo");
+
+a.style.color = "blue";*/
+
+/*var a = document.querySelector("h1");
+
+a.style.color = "red";*/
+
+/*var a = document.querySelector(".ultima h1");
+
+a.style.color = "red";*/
+
+/*var a = document.querySelector("a[class='vinculo']");
+
+a.style.color = "green";*/
+
+/*var a = document.querySelectorAll("p")[2];
+
+a.style.color = "red";*/
+
+
+/*var a = document.getElementById("uno");
+
+a.style.color = "red";*/
+
+/*var a = document.getElementsByClassName("primero")[0];
+
+a.style.color = "red";*/
+
+
+/*var a = document.getElementsByTagName("p")[0];
+
+a.style.color = "red";*/
+
+/*var a = document.getElementsByTagName("p")[0];
+
+a.innerHTML = "Nuevo texto";*/
+
+
+/*var a = document.getElementsByTagName("p")[0];
+
+a.innerHTML += " <p> +  Nuevo texto</p>";*/
+
+
+/*var a = document.getElementsByClassName("primero")[0];
+
+a.className = a.className.replace("primero", "nueva");*/
+
+
+/*var a = document.getElementsByClassName("primero")[0];
+
+a.style.color = "green";
+a.style.border = "1px solid red";
+
+a.style.fontFamily = "Arial";
+
+a.style.fontSize = "45px";*/
+
+var a = document.getElementById("todo");
+
+function fondo(color) {
+    if (color == "rojo") {
+        a.style.backgroundColor = "red";
+        a.style.color = "white";
+    } else if (color == "verde") {
+        a.style.backgroundColor = "green";
+    } else if (color == "azul") {
+        a.style.backgroundColor = "blue";
+    }
+
+}
